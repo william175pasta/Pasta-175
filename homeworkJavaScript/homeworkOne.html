@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>williamhomework</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,inital-scale=1,user-scalable=1">
+        <meta name="keyword" content="網頁關鍵字">
+        <meta name="description" content="網頁簡短描述">
+        <style type="text/css">
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <p>請輸入您的彈跳次數:</p>
+            <input id="n1" type="text" name="欄位名稱">
+            <button type="button" onclick="myFunction()">
+                GO
+            </button>
+            <script type="text/javascript">
+
+                var n1 = prompt("您要跳次數?", "");
+                if (n1 < 0) {
+                    alert('請從新輸入');
+                }
+                for (var i = 1; i <= n1; i++) {
+                    alert("第" + i + "次");
+                }
+                function myFunction() {
+                    var x1 = document.getElementById("n1").value;
+                    if (x1 < 0) {
+                        alert('請從新輸入');
+                    }
+                    for (var i = 1; i <= x1; i++) {
+                        alert("第" + i + "次");
+                    }
+                }
+            </script>
+        </header>
+    </body>
+
+</html>
